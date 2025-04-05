@@ -34,7 +34,7 @@ A robust RESTful API built with Django and Django REST Framework for managing li
 1. Clone the repository:
 ```bash
 git clone https://github.com/paulokoye001/Library_Management_Lab
-cd library_management
+cd Library_Management_Lab
 ```
 
 2. Install dependencies:
