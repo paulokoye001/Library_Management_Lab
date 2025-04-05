@@ -33,7 +33,7 @@ A robust RESTful API built with Django and Django REST Framework for managing li
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/irobinda01/library_management
+git clone https://github.com/paulokoye001/Library_Management_Lab
 cd library_management
 ```
 
@@ -147,62 +147,6 @@ curl http://localhost:8000/api/books/?search=python \
 }
 ```
 
-## Vercel Deployment
-
-### 1. Prepare Your Django Project
-
-1. **Install Required Packages**:
-   Vercel works well with ASGI, so ensure you have `daphne` or `uvicorn` installed:
-   ```bash
-   pip install daphne
-   ```
-
-2. **Set Up a `vercel.json` Configuration File**:
-   Create a `vercel.json` file in the root directory of your project with the following content:
-   ```json
-   {
-     "builds": [
-       {
-         "src": "libraryproject/asgi.py",
-         "use": "@vercel/python",
-         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-       }
-     ],
-     "routes": [
-       {
-         "src": "/(.*)",
-         "dest": "libraryproject/asgi.py"
-       }
-     ]
-   }
-   ```
-
-3. **Static Files**:
-   Configure Django to serve static files:
-   - Update `settings.py`:
-     ```python
-     ALLOWED_HOSTS = ['.vercel.app']
-     ```
-
-### 2. Initialize a Git Repository
-
-Ensure your project is in a Git repository:
-```bash
-git init
-git add .
-git commit -m "hosting my project on Vercel"
-git push
-```
-
----
-
-### 3. Connect to Vercel
-
-1. Log in to your Vercel account.
-2. On the dashboard, click **New Project**.
-3. Select the Git repository containing your Django project.
-4. Click **Import**.
-
 ## Development
 
 ### Running Tests
@@ -219,5 +163,5 @@ flake8 .
 ## Author
 
 Your Name
-- Email: irobindachinonso@gmail.com
-- GitHub: [@irobinda01](https://github.com/irobinda01/library_management)
+- Email: paulokoye4sealx@gmail.com
+- GitHub: [paulokoye001](https://github.com/paulokoye001/Library_Management_Lab)
